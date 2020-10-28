@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script type="text/javascript">
+        //如何从一个字符串中提取一个字符串，
+        //情况1：只有一个'.'时
+        var path = 'http://localhost:4000/chapter1/string.html'
+        var ps = path.indexOf('.')
+        console.log(ps)
+        var zfc = path.substr(ps)
+        console.log(zfc)
+        //情况2;有两个'.'时
+
+        var path2 = 'http://loca.lhost:4000/chapter1/string.html'
+        var ps2 = path2.lastIndexOf('.')
+        var zfc2 = path2.substr(ps2)
+        console.log(zfc2)
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <textarea id="txt"></textarea>
+    <button id="btn">点击</button>
+    <script type="text/javascript">
+        //如何处理textarea中的单个行，并且每行收尾无空格
+        var oBtn = document.getElementById('btn')
+        var oTxt = document.getElementById('txt')
+        oBtn.onclick = function () {
+            var lin = oTxt.value.split('\n').map((item)=> item.trim())
+            console.log(lin)
+        }
+    </script>
+</body>
+</html>

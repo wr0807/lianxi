@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script type="text/javascript">
+        //如何查找一个字符串，是否在另一个字符串中？
+        //分析：
+        // （1）用到indexOf方法：表示如果找到就返回一个位置看，如果没找到就返回-1
+        //（2）做一个判断
+        var str1 = 'wangruinihao'
+        var str2 = 'k'
+        console.log(str1.indexOf(str2))
+        if(str1.indexOf(str2)== -1){
+            alert("没有查找到")
+        }else {
+            alert("查找到了")
+        }
+    </script>
+</body>
+</html>
